@@ -13,6 +13,11 @@ sudo systemctl start pigpiod
 yes | sudo apt-get install lxshortcut
 
 #install imgaug for onboard training
+pip uninstall protobuf
+pip install protobuf==3.20.3
+sudo apt install -y libatlas-base-dev
+pip install numpy --upgrade
+pip install opencv-python==4.6.0.66
 pip install imgaug
 
 #Download TatamiRacer files
